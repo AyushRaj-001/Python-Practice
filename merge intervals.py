@@ -15,7 +15,7 @@ class Solution:
             start, end = intervals[i]
             last_end = merged[-1][1]
             
-            # If overlapping
+            
             if start <= last_end:
                 merged[-1][1] = max(last_end, end)
             else:
